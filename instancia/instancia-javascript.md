@@ -216,10 +216,10 @@ Como sabemos, em programação orientada a objetos tradicional encapsulamento na
 Quando criamos uma função anônima com execução imediata, é possível criar um escopo temporário para as nossas funções e variáveis. Assim, acabamos evitando uma poluição chata em nosso escopo global, além de possívels conflitos de variáveis ou funções que tenham o mesmo nome.
 
 
-Considerações Finais
----------------------
 Fontes
 -------
+
+
 [Hoisting e escopo em JavaScript - Loop infinito](http://loopinfinito.com.br/2014/10/29/hoisting-e-escopo-em-javascript/)  
 [Javascript Scoping and Hoisting](http://www.adequatelygood.com/JavaScript-Scoping-and-Hoisting.html)  
 [Hoisting - Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting)  
