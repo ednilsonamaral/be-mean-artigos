@@ -1,6 +1,6 @@
 # MongoDb - Artigo sobre Autenticação no MongoDb
 **Autor:** Ednilson Amaral
-**Data:** Date.now() //em timestamp
+**Data:** 04/12/2015 às 23:41
 
 
 ## Qual a diferença entre Autenticação e Autorização?  
