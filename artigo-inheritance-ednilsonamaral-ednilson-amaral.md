@@ -57,7 +57,9 @@ $ node heranca.js
 1º Ano  
 ```
 
-A propriedade `__proto__` não é padrão nos navegadores, então, pode muitas vezes não funcionar. Devido a isso que a propriedade `setPrototypeOf()` é mais recomendada.
+A propriedade `__proto__` não é padrão nos navegadores, então, pode muitas vezes não funcionar. Devido a isso que a propriedade `setPrototypeOf()` é mais recomendada.  
+
+Com esse pequeno código conseguimos ver uma cadeia de protótipos, ou seja um objeto vai herdar o protótipo de outro objeto e assim por diante. Agora fica uma dúvida, e se temos 20 alunos, qual o tamanho dessa cadeia de protótipos? E se forem 200? Como fica o desempenho de nossa aplicação? ):
 
 
 ### Herança por Função Fábrica  
@@ -140,7 +142,17 @@ Precisamos ressaltar que nessa aborgadem de invocarmos o `new`, se não o invoca
 
 Infelizmente (SQN), a ES5 funciona *parcialmente* em versões do IE da 9 para as mais atuais. Na versão 9, funciona parcialmente. Porém, caso você seja um carinha chato, do tipo que curte *Graceful Degradation*, vai de [shim](https://github.com/es-shims/es5-shim). Mas, se você for legal e adepto a *Progressive Enhancement*, então não terás muitos problemas.
 
-![Compatibilidade ECMAScript5]()
+
+![Compatibilidade ECMAScript5](https://raw.githubusercontent.com/ednilsonamaral/be-mean-artigos/master/img/es5.jpg)
+
+
+### Concluindo  
+
+Como vimos, existem várias formas heranças no JavaScript, baseado em protótipo. E, antes de sair escrevendo códigos complexos, devemos estar claros quanto ao entendimetno de protótipos e como funcionam heranças neles.  
+
+Um ponto vital no qual devemos pensar quando pensamos em desempenho de nossa aplicação, para evitar algumas dores de cabeça, podemos utilizar closures ao invés de *prototypes*. Isso se diz necessário quando temos um número grande de uma cadeia de protótipos.  
+
+Esse artigo é uma introdução à herança em JS, espero que tenha sido o mais claro e objetivo possível. Se encontrarem algum errinho, *please*, diz aí, de boa! Até mais!! :)
 
 
 ### Fontes  
